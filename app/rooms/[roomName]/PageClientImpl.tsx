@@ -850,7 +850,7 @@ function RoomInner(props: {
         return (
           <div style={{ width: '100%', height: '100%', background: '#121212', position: 'relative', overflow: 'hidden' }}>
             <iframe
-              src={`/success-class.html?embed=true&roomName=${props.roomName}&user=${encodeURIComponent(user?.identity || 'guest')}`}
+              src={`/success-class.html?embed=true&room=${props.roomName}&username=${encodeURIComponent(user?.identity || user?.name || 'guest')}`}
               style={{
                 width: '100%',
                 height: '100%',
